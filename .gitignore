@@ -1,0 +1,11 @@
+mscoco/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Generated artifacts and experiment outputs
+artifacts/
+output/
+data_generated/
