@@ -3,7 +3,8 @@
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-TARGET_ROOT="${1:-${SCRIPT_DIR}/mscoco}"
+PROJECT_ROOT="$(cd "${SCRIPT_DIR}/.." && pwd)"
+TARGET_ROOT="${1:-${PROJECT_ROOT}/mscoco}"
 IMAGE_DIR="${TARGET_ROOT}/val2017"
 ANNOTATION_DIR="${TARGET_ROOT}/annotations"
 IMAGE_ZIP_PATH="${TARGET_ROOT}/val2017.zip"
